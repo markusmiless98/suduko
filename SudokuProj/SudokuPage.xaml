@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SudokuProj.SudokuPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a hovercraft number nine" />
+            <ListView ItemsSource="{Binding Suduko.PuzzleImages}" ItemSelected="OnListViewitemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="10" RowDefinitions="Auto,*" ColumnDefinitions="300,*" ColumnSpacing="20">
+                                <Image
+                                    Grid.RowSpan="2"
+                                    Source="{Binding Suduko.PuzzleImages}"
+                                    Aspect="Fill"
+                                    HeightRequest="200"
+                                    />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Label
+                Text="{Binding temp}"
+                />
+            <Label
+                x:Name="TXT">
+            </Label>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
