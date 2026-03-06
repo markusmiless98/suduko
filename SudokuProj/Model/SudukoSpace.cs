@@ -8,6 +8,30 @@ namespace SudokuProj.Model
 {
     public class SudukoSpace
     {
+        private int row;
+        public int Row {
+            get
+            {
+                return row;
+            }
+            set
+            {
+                row = value;
+            }
+        }
+        private int column;
+        public int Column
+        {
+            get
+            {
+                return column;
+            }
+            set
+            {
+                column = value;
+            }
+        }
+
         private int number;
         public int Number
         {

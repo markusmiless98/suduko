@@ -16,11 +16,10 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid Padding="10" RowDefinitions="Auto,*" ColumnDefinitions="300,*" ColumnSpacing="20">
+                            <Grid RowDefinitions="200,200,200" ColumnDefinitions="200,200,200" FlexLayout.AlignSelf="Auto">
                                 <Image
-                                    Grid.RowSpan="2"
-                                    Source="{Binding Suduko.PuzzleImages}"
-                                    Aspect="Fill"
+                                    Source="{Binding .}"
+                                    Aspect="AspectFill"
                                     HeightRequest="200"
                                     />
                             </Grid>
@@ -28,9 +27,6 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Label
-                Text="{Binding temp}"
-                />
             <Label
                 x:Name="TXT">
             </Label>

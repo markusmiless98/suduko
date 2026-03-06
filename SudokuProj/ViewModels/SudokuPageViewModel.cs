@@ -10,7 +10,7 @@ using SudokuProj.SudAPI;
 
 namespace SudokuProj.ViewModels
 {
-    public class SudokuPageViewModel : INotifyValueChange
+    public class SudokuPageViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler? PropertyChanged;
 
