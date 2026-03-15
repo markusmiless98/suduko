@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SudokuProj.Model;
+using SudokuProj.ViewModels;
 
 namespace SudokuProj.Delegates
 {
@@ -16,7 +17,7 @@ namespace SudokuProj.Delegates
 
             foreach (var item in array)
             {
-                if (item == null || item <= -1)
+                if (item <= -1)
                 {
                     txt.Add("X");
                 }
@@ -40,30 +41,5 @@ namespace SudokuProj.Delegates
 
             return txt;
         }
-        public static List<SudukoSpace> GetPictureFromIntArray(this List<int[]> array)
-        {
-            List<SudukoSpace> spaces = new List<SudukoSpace>();
-
-            int row = 0;
-            int col = 0;
-
-            foreach (var item in array)
-            {
-                foreach (var ints in item)
-                {
-                    SudukoSpace space = new SudukoSpace();
-                    space.Column = col;
-                    space.Row = row;
-                    space.Number = ints;
-                    col++;
-                    spaces.Add(space);
-                }
-                row++;
-                col = 0;
-            }
-
-            return spaces;
-        }
-
     }
 }

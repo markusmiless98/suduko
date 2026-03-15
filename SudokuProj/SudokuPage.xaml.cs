@@ -1,4 +1,6 @@
 using System;
+using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
 using Microsoft.Maui.Controls;
 using SudokuProj.Delegates;
 using SudokuProj.Model;
@@ -15,7 +17,7 @@ namespace SudokuProj
         {
             InitializeComponent();
             BindingContext = new SudokuPageViewModel();
-            OnRespawnSuduko();
+            OnSpawnSuduko();
         }
 
         private async void OnListViewitemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -30,10 +32,50 @@ namespace SudokuProj
             }
         }
 
-        private async void OnRespawnSuduko()
+        List<ImageButton> imgButList = new List<ImageButton>();
+        private async void OnSpawnSuduko()
         {
-            SudukoLayout layout = await APIHandler.GetSuduko();
-            // Temp
+            int i = 0;
+            BindingContext.GetSudukoPageViewFromBinding().Suduko = await APIHandler.GetSuduko();
+            Thread.Sleep(4000);
+            SudukoLayout puzzle = BindingContext.GetSudukoFromBinding();
+            int x = 0;
+            int y = 0;
+            while (i < 81)
+            {
+                ImageButton imgBut = new ImageButton
+                {
+                    Source = $"{puzzle.PuzzleImages[i].NumberImg}",
+                    
+                };
+                ImagePar.Add(
+                    imgBut,
+                    x,
+                    y
+                );
+                imgBut.Pressed += ImageButton_Pressed;
+                imgButList.Add(imgBut);
+                i++;
+                if (x >= 8)
+                {
+                    x = 0;
+                    y++;
+                }
+                else
+                {
+                    x++;
+                }
+            }
+            TXT.Text = await OnSpawnSudukoText();
+        }
+
+        // Text Version
+        private async Task<string> OnSpawnSudukoText()
+        {
+            Thread.Sleep(500);
+            var bin = BindingContext.GetSudukoPageViewFromBinding();
+            SudukoLayout layout = bin.Suduko;
+
             List<string> puzzle = layout.Puzzle.GetStringFromIntArray();
             int square_amnt = 3;
             int row_amnt = 9;
@@ -64,38 +106,47 @@ namespace SudokuProj
                     }
                 }
             }
-            TXT.Text = txt;
-            
+            return txt;
         }
 
         private int selected_element = 0;
         private ImageButton img = null;
 
-        private void ImageButton_Pressed(object sender, EventArgs e)
+        private async void ImageButton_Pressed(object sender, EventArgs e)
         {
             string end_res = "";
             if (sender is ImageButton)
             {
                 img = sender as ImageButton;
-                Func<double, int> lower_to_num = x =>
-                {
-                    x += 80;
-                    return (int)x / 80 - 1;
-                };
                 Func<double, double, int> num_sel = (x, y) =>
                 {
                     return (int)(x + (y * 9));
                 };
-                int x = lower_to_num(img.X);
-                int y = lower_to_num(img.Y);
+                int x = img.X.GetNumOfSud();
+                int y = img.Y.GetNumOfSud();
                 selected_element = num_sel(x,y);
-                if (BindingContext is SudokuPageViewModel)
+                if (BindingContext.GetSudukoPageViewFromBinding() != null)
                 {
-                    var bin = BindingContext as SudokuPageViewModel;
+                    var bin = BindingContext.GetSudukoPageViewFromBinding();
                     end_res = bin.Suduko.Puzzle[y][x].ToString();
                 }
             }
-            test.Text = selected_element.ToString() + " is " + end_res;
+            test.Text = "Selected Space is " + end_res;
+            test.Text += " compared to; ";
+            ImageButton but = await GetImageSearch(0, 0); // Temp for tests to show i know linq
+            test.Text += but.Source.ToString();
+        }
+
+        private async void SudukoChangeNumber()
+        {
+
+        }
+
+        private async Task<ImageButton> GetImageSearch(int x, int y)
+        {
+            IEnumerable<ImageButton> imgBut = imgButList.Where(c => c.Bounds.X.GetNumOfSud() == x && c.Bounds.Y.GetNumOfSud() == y);
+
+            return (ImageButton)imgBut.ToList()[0];
         }
     }
 }
