@@ -1,4 +1,5 @@
 using System;
+using Microsoft.Maui.Controls;
 using SudokuProj.Delegates;
 using SudokuProj.Model;
 using SudokuProj.SudAPI;
@@ -9,10 +10,11 @@ namespace SudokuProj
 {
     public partial class SudokuPage : ContentPage
     {
+        
         public SudokuPage()
         {
             InitializeComponent();
-            BindingContext = new ViewModels.SudokuPageViewModel();
+            BindingContext = new SudokuPageViewModel();
             OnRespawnSuduko();
         }
 
@@ -24,6 +26,7 @@ namespace SudokuProj
                 var page = new SudokuPage();
                 page.BindingContext = product;
                 await Navigation.PushAsync(page);
+                Thread.Sleep(4000);
             }
         }
 
@@ -62,6 +65,37 @@ namespace SudokuProj
                 }
             }
             TXT.Text = txt;
+            
+        }
+
+        private int selected_element = 0;
+        private ImageButton img = null;
+
+        private void ImageButton_Pressed(object sender, EventArgs e)
+        {
+            string end_res = "";
+            if (sender is ImageButton)
+            {
+                img = sender as ImageButton;
+                Func<double, int> lower_to_num = x =>
+                {
+                    x += 80;
+                    return (int)x / 80 - 1;
+                };
+                Func<double, double, int> num_sel = (x, y) =>
+                {
+                    return (int)(x + (y * 9));
+                };
+                int x = lower_to_num(img.X);
+                int y = lower_to_num(img.Y);
+                selected_element = num_sel(x,y);
+                if (BindingContext is SudokuPageViewModel)
+                {
+                    var bin = BindingContext as SudokuPageViewModel;
+                    end_res = bin.Suduko.Puzzle[y][x].ToString();
+                }
+            }
+            test.Text = selected_element.ToString() + " is " + end_res;
         }
     }
 }

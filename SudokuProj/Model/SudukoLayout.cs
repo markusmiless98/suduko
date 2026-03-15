@@ -22,7 +22,7 @@ namespace SudokuProj.Model
                 PuzzleImages = Puzzle.GetPictureFromIntArray();
             }
         }
-        public List<string> PuzzleImages { get; set; }
+        public List<SudukoSpace> PuzzleImages { get; set; }
         public List<int[]> _solution;
         [JsonPropertyName("solution")]
         public List<int[]> Solution {
@@ -33,7 +33,7 @@ namespace SudokuProj.Model
                 SolutionImages = Solution.GetPictureFromIntArray();
             }
         }
-        public List<string> SolutionImages { get; set; }
+        public List<SudukoSpace> SolutionImages { get; set; }
 
     }
 }

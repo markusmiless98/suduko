@@ -40,19 +40,29 @@ namespace SudokuProj.Delegates
 
             return txt;
         }
-        public static List<string> GetPictureFromIntArray(this List<int[]> array)
+        public static List<SudukoSpace> GetPictureFromIntArray(this List<int[]> array)
         {
-            List<string> txt = new List<string>();
+            List<SudukoSpace> spaces = new List<SudukoSpace>();
+
+            int row = 0;
+            int col = 0;
 
             foreach (var item in array)
             {
                 foreach (var ints in item)
                 {
-                    txt.AddRange(SudokuGUIInfo.gui_info[ints.ToString()]);
+                    SudukoSpace space = new SudukoSpace();
+                    space.Column = col;
+                    space.Row = row;
+                    space.Number = ints;
+                    col++;
+                    spaces.Add(space);
                 }
+                row++;
+                col = 0;
             }
 
-            return txt;
+            return spaces;
         }
 
     }

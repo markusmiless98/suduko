@@ -7,29 +7,95 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
-            <Image
-                Source="dotnet_bot.png"
-                HeightRequest="185"
-                Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a hovercraft number nine" />
-            <ListView ItemsSource="{Binding Suduko.PuzzleImages}" ItemSelected="OnListViewitemSelected">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <Grid RowDefinitions="200,200,200" ColumnDefinitions="200,200,200" FlexLayout.AlignSelf="Auto">
-                                <Image
-                                    Source="{Binding .}"
-                                    Aspect="AspectFill"
-                                    HeightRequest="200"
-                                    />
-                            </Grid>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
             <Label
                 x:Name="TXT">
             </Label>
+            <Label
+                x:Name="test">
+            </Label>
+            <Grid x:Name="ImagePar" RowDefinitions="80,80,80,80,80,80,80,80,80" ColumnDefinitions="80,80,80,80,80,80,80,80,80">
+                <ImageButton Grid.Column="0" Grid.Row="0" Source="{Binding Suduko.PuzzleImages[0].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="1" Grid.Row="0" Source="{Binding Suduko.PuzzleImages[1].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="2" Grid.Row="0" Source="{Binding Suduko.PuzzleImages[2].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="3" Grid.Row="0" Source="{Binding Suduko.PuzzleImages[3].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="4" Grid.Row="0" Source="{Binding Suduko.PuzzleImages[4].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="5" Grid.Row="0" Source="{Binding Suduko.PuzzleImages[5].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="6" Grid.Row="0" Source="{Binding Suduko.PuzzleImages[6].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="7" Grid.Row="0" Source="{Binding Suduko.PuzzleImages[7].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="8" Grid.Row="0" Source="{Binding Suduko.PuzzleImages[8].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="0" Grid.Row="1" Source="{Binding Suduko.PuzzleImages[9].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="1" Grid.Row="1" Source="{Binding Suduko.PuzzleImages[10].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="2" Grid.Row="1" Source="{Binding Suduko.PuzzleImages[11].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="3" Grid.Row="1" Source="{Binding Suduko.PuzzleImages[12].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="4" Grid.Row="1" Source="{Binding Suduko.PuzzleImages[13].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="5" Grid.Row="1" Source="{Binding Suduko.PuzzleImages[14].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="6" Grid.Row="1" Source="{Binding Suduko.PuzzleImages[15].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="7" Grid.Row="1" Source="{Binding Suduko.PuzzleImages[16].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="8" Grid.Row="1" Source="{Binding Suduko.PuzzleImages[17].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="0" Grid.Row="2" Source="{Binding Suduko.PuzzleImages[18].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="1" Grid.Row="2" Source="{Binding Suduko.PuzzleImages[19].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="2" Grid.Row="2" Source="{Binding Suduko.PuzzleImages[20].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="3" Grid.Row="2" Source="{Binding Suduko.PuzzleImages[21].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="4" Grid.Row="2" Source="{Binding Suduko.PuzzleImages[22].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="5" Grid.Row="2" Source="{Binding Suduko.PuzzleImages[23].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="6" Grid.Row="2" Source="{Binding Suduko.PuzzleImages[24].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="7" Grid.Row="2" Source="{Binding Suduko.PuzzleImages[25].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="8" Grid.Row="2" Source="{Binding Suduko.PuzzleImages[26].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="0" Grid.Row="3" Source="{Binding Suduko.PuzzleImages[27].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="1" Grid.Row="3" Source="{Binding Suduko.PuzzleImages[28].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="2" Grid.Row="3" Source="{Binding Suduko.PuzzleImages[29].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="3" Grid.Row="3" Source="{Binding Suduko.PuzzleImages[30].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="4" Grid.Row="3" Source="{Binding Suduko.PuzzleImages[31].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="5" Grid.Row="3" Source="{Binding Suduko.PuzzleImages[32].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="6" Grid.Row="3" Source="{Binding Suduko.PuzzleImages[33].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="7" Grid.Row="3" Source="{Binding Suduko.PuzzleImages[34].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="8" Grid.Row="3" Source="{Binding Suduko.PuzzleImages[35].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="0" Grid.Row="4" Source="{Binding Suduko.PuzzleImages[36].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="1" Grid.Row="4" Source="{Binding Suduko.PuzzleImages[37].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="2" Grid.Row="4" Source="{Binding Suduko.PuzzleImages[38].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="3" Grid.Row="4" Source="{Binding Suduko.PuzzleImages[39].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="4" Grid.Row="4" Source="{Binding Suduko.PuzzleImages[40].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="5" Grid.Row="4" Source="{Binding Suduko.PuzzleImages[41].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="6" Grid.Row="4" Source="{Binding Suduko.PuzzleImages[42].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="7" Grid.Row="4" Source="{Binding Suduko.PuzzleImages[43].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="8" Grid.Row="4" Source="{Binding Suduko.PuzzleImages[44].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="0" Grid.Row="5" Source="{Binding Suduko.PuzzleImages[45].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="1" Grid.Row="5" Source="{Binding Suduko.PuzzleImages[46].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="2" Grid.Row="5" Source="{Binding Suduko.PuzzleImages[47].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="3" Grid.Row="5" Source="{Binding Suduko.PuzzleImages[48].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="4" Grid.Row="5" Source="{Binding Suduko.PuzzleImages[49].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="5" Grid.Row="5" Source="{Binding Suduko.PuzzleImages[50].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="6" Grid.Row="5" Source="{Binding Suduko.PuzzleImages[51].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="7" Grid.Row="5" Source="{Binding Suduko.PuzzleImages[52].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="8" Grid.Row="5" Source="{Binding Suduko.PuzzleImages[53].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="0" Grid.Row="6" Source="{Binding Suduko.PuzzleImages[54].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="1" Grid.Row="6" Source="{Binding Suduko.PuzzleImages[55].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="2" Grid.Row="6" Source="{Binding Suduko.PuzzleImages[56].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="3" Grid.Row="6" Source="{Binding Suduko.PuzzleImages[57].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="4" Grid.Row="6" Source="{Binding Suduko.PuzzleImages[58].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="5" Grid.Row="6" Source="{Binding Suduko.PuzzleImages[59].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="6" Grid.Row="6" Source="{Binding Suduko.PuzzleImages[60].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="7" Grid.Row="6" Source="{Binding Suduko.PuzzleImages[61].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="8" Grid.Row="6" Source="{Binding Suduko.PuzzleImages[62].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="0" Grid.Row="7" Source="{Binding Suduko.PuzzleImages[63].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="1" Grid.Row="7" Source="{Binding Suduko.PuzzleImages[64].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="2" Grid.Row="7" Source="{Binding Suduko.PuzzleImages[65].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="3" Grid.Row="7" Source="{Binding Suduko.PuzzleImages[66].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="4" Grid.Row="7" Source="{Binding Suduko.PuzzleImages[67].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="5" Grid.Row="7" Source="{Binding Suduko.PuzzleImages[68].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="6" Grid.Row="7" Source="{Binding Suduko.PuzzleImages[69].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="7" Grid.Row="7" Source="{Binding Suduko.PuzzleImages[70].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="8" Grid.Row="7" Source="{Binding Suduko.PuzzleImages[71].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="0" Grid.Row="8" Source="{Binding Suduko.PuzzleImages[72].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="1" Grid.Row="8" Source="{Binding Suduko.PuzzleImages[73].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="2" Grid.Row="8" Source="{Binding Suduko.PuzzleImages[74].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="3" Grid.Row="8" Source="{Binding Suduko.PuzzleImages[75].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="4" Grid.Row="8" Source="{Binding Suduko.PuzzleImages[76].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="5" Grid.Row="8" Source="{Binding Suduko.PuzzleImages[77].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="6" Grid.Row="8" Source="{Binding Suduko.PuzzleImages[78].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="7" Grid.Row="8" Source="{Binding Suduko.PuzzleImages[79].NumberImg}" Pressed="ImageButton_Pressed"/>
+                <ImageButton Grid.Column="8" Grid.Row="8" Source="{Binding Suduko.PuzzleImages[80].NumberImg}" Pressed="ImageButton_Pressed"/>
+            </Grid>
 
 
         </VerticalStackLayout>
