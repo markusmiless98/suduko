@@ -33,12 +33,13 @@ namespace SudokuProj
         }
 
         List<ImageButton> imgButList = new List<ImageButton>();
+
         private async void OnSpawnSuduko()
         {
             int i = 0;
-            BindingContext.GetSudukoPageViewFromBinding().Suduko = await APIHandler.GetSuduko();
+            SudokuPageViewModel.Instance.Suduko = await APIHandler.GetSuduko();
             Thread.Sleep(4000);
-            SudukoLayout puzzle = BindingContext.GetSudukoFromBinding();
+            SudukoLayout puzzle = SudokuPageViewModel.Instance.Suduko;
             int x = 0;
             int y = 0;
             while (i < 81)
@@ -46,7 +47,7 @@ namespace SudokuProj
                 ImageButton imgBut = new ImageButton
                 {
                     Source = $"{puzzle.PuzzleImages[i].NumberImg}",
-                    
+                    ZIndex = 1
                 };
                 ImagePar.Add(
                     imgBut,
@@ -73,8 +74,7 @@ namespace SudokuProj
         private async Task<string> OnSpawnSudukoText()
         {
             Thread.Sleep(500);
-            var bin = BindingContext.GetSudukoPageViewFromBinding();
-            SudukoLayout layout = bin.Suduko;
+            SudukoLayout layout = SudokuPageViewModel.Instance.Suduko;
 
             List<string> puzzle = layout.Puzzle.GetStringFromIntArray();
             int square_amnt = 3;
@@ -125,10 +125,9 @@ namespace SudokuProj
                 int x = img.X.GetNumOfSud();
                 int y = img.Y.GetNumOfSud();
                 selected_element = num_sel(x,y);
-                if (BindingContext.GetSudukoPageViewFromBinding() != null)
+                if (SudokuPageViewModel.Instance != null)
                 {
-                    var bin = BindingContext.GetSudukoPageViewFromBinding();
-                    end_res = bin.Suduko.Puzzle[y][x].ToString();
+                    end_res = SudokuPageViewModel.Instance.Suduko.Puzzle[y][x].ToString();
                 }
             }
             test.Text = "Selected Space is " + end_res;
@@ -139,7 +138,7 @@ namespace SudokuProj
 
         private async void SudukoChangeNumber()
         {
-
+            // Not implemented cuz not focus
         }
 
         private async Task<ImageButton> GetImageSearch(int x, int y)

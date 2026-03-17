@@ -14,6 +14,7 @@ namespace SudokuProj
         }
 
         SudukoLayout layout;
+        /*
         private async void OnCounterClicked(object? sender, EventArgs e)
         {
             layout = await APIHandler.GetSuduko();
@@ -42,6 +43,7 @@ namespace SudokuProj
 
             SemanticScreenReader.Announce(SodukoView.Text);
         }
+        */
         private async void OnSudokuPage(object? sender, EventArgs e)
         {
             await Navigation.PushAsync(new SudokuPage());

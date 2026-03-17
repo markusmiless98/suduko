@@ -44,21 +44,13 @@ namespace SudokuProj.Delegates
         {
             try
             {
-                return obj as SudokuPageViewModel;
+                return SudokuPageViewModel.Instance;
             }
             catch
             {
                 // Idk
                 return null;
             }
-        }
-        public static SudukoLayout GetSudukoFromBinding(this object obj)
-        {
-            if (obj.GetSudukoPageViewFromBinding() != null)
-            {
-                return obj.GetSudukoPageViewFromBinding().Suduko;
-            }
-            return null;
         }
     }
 }

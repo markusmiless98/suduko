@@ -14,6 +14,21 @@ namespace SudokuProj.ViewModels
     {
         public event PropertyChangedEventHandler? PropertyChanged;
 
+        private static SudokuPageViewModel instance;
+
+        public static SudokuPageViewModel Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new SudokuPageViewModel();
+                }
+                return instance;
+            }
+        }
+
+
         public SudokuPageViewModel()
         {
             // Load Sudoku Async

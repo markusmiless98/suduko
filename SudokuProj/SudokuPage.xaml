@@ -8,13 +8,96 @@
             Padding="30,0"
             Spacing="25">
             <Label
-                x:Name="TXT">
-            </Label>
-            <Label
                 x:Name="test">
             </Label>
-            <Grid x:Name="ImagePar" RowDefinitions="80,80,80,80,80,80,80,80,80" ColumnDefinitions="80,80,80,80,80,80,80,80,80">
-            </Grid>
+            <HorizontalStackLayout>
+                <Label
+                x:Name="TXT">
+                </Label>
+                <Grid x:Name="ImagePar" RowDefinitions="80,80,80,80,80,80,80,80,80" ColumnDefinitions="80,80,80,80,80,80,80,80,80">
+                    <Image Grid.Column="0" Grid.Row="0" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="1" Grid.Row="0" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="2" Grid.Row="0" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="3" Grid.Row="0" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="4" Grid.Row="0" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="5" Grid.Row="0" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="6" Grid.Row="0" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="7" Grid.Row="0" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="8" Grid.Row="0" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="0" Grid.Row="1" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="1" Grid.Row="1" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="2" Grid.Row="1" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="3" Grid.Row="1" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="4" Grid.Row="1" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="5" Grid.Row="1" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="6" Grid.Row="1" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="7" Grid.Row="1" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="8" Grid.Row="1" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="0" Grid.Row="2" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="1" Grid.Row="2" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="2" Grid.Row="2" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="3" Grid.Row="2" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="4" Grid.Row="2" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="5" Grid.Row="2" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="6" Grid.Row="2" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="7" Grid.Row="2" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="8" Grid.Row="2" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="0" Grid.Row="3" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="1" Grid.Row="3" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="2" Grid.Row="3" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="3" Grid.Row="3" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="4" Grid.Row="3" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="5" Grid.Row="3" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="6" Grid.Row="3" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="7" Grid.Row="3" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="8" Grid.Row="3" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="0" Grid.Row="4" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="1" Grid.Row="4" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="2" Grid.Row="4" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="3" Grid.Row="4" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="4" Grid.Row="4" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="5" Grid.Row="4" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="6" Grid.Row="4" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="7" Grid.Row="4" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="8" Grid.Row="4" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="0" Grid.Row="5" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="1" Grid.Row="5" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="2" Grid.Row="5" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="3" Grid.Row="5" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="4" Grid.Row="5" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="5" Grid.Row="5" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="6" Grid.Row="5" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="7" Grid.Row="5" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="8" Grid.Row="5" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="0" Grid.Row="6" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="1" Grid.Row="6" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="2" Grid.Row="6" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="3" Grid.Row="6" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="4" Grid.Row="6" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="5" Grid.Row="6" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="6" Grid.Row="6" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="7" Grid.Row="6" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="8" Grid.Row="6" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="0" Grid.Row="7" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="1" Grid.Row="7" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="2" Grid.Row="7" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="3" Grid.Row="7" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="4" Grid.Row="7" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="5" Grid.Row="7" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="6" Grid.Row="7" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="7" Grid.Row="7" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="8" Grid.Row="7" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="0" Grid.Row="8" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="1" Grid.Row="8" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="2" Grid.Row="8" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="3" Grid.Row="8" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="4" Grid.Row="8" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="5" Grid.Row="8" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="6" Grid.Row="8" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="7" Grid.Row="8" Source="square_bg_norm.png"/>
+                    <Image Grid.Column="8" Grid.Row="8" Source="square_bg_norm.png"/>
+                </Grid>
+            </HorizontalStackLayout>
 
 
         </VerticalStackLayout>
