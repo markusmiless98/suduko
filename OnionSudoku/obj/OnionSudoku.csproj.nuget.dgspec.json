@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\VS Proj\\Maoi\\Onion\\SudukoOrganizer\\OnionSudoku\\OnionSudoku.csproj": {}
+    "D:\\VS Proj\\Maoi\\SudokuProj\\suduko\\OnionSudoku\\OnionSudoku.csproj": {}
   },
   "projects": {
-    "D:\\VS Proj\\Maoi\\Onion\\SudukoOrganizer\\OnionSudoku\\OnionSudoku.csproj": {
+    "D:\\VS Proj\\Maoi\\SudokuProj\\suduko\\OnionSudoku\\OnionSudoku.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\VS Proj\\Maoi\\Onion\\SudukoOrganizer\\OnionSudoku\\OnionSudoku.csproj",
+        "projectUniqueName": "D:\\VS Proj\\Maoi\\SudokuProj\\suduko\\OnionSudoku\\OnionSudoku.csproj",
         "projectName": "OnionSudoku",
-        "projectPath": "D:\\VS Proj\\Maoi\\Onion\\SudukoOrganizer\\OnionSudoku\\OnionSudoku.csproj",
+        "projectPath": "D:\\VS Proj\\Maoi\\SudokuProj\\suduko\\OnionSudoku\\OnionSudoku.csproj",
         "packagesPath": "C:\\Users\\mikae\\.nuget\\packages\\",
-        "outputPath": "D:\\VS Proj\\Maoi\\Onion\\SudukoOrganizer\\OnionSudoku\\obj\\",
+        "outputPath": "D:\\VS Proj\\Maoi\\SudokuProj\\suduko\\OnionSudoku\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\VS Program\\NuGetPackages"
