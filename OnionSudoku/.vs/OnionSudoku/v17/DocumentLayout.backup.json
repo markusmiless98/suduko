@@ -1,19 +1,32 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\VS Proj\\Maoi\\Onion\\SudukoOrganizer\\OnionSudoku\\",
+  "WorkspaceRootPath": "D:\\VS Proj\\Maoi\\SudokuProj\\suduko\\OnionSudoku\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CE32BBD1-BFCB-459A-BDD1-61EED3869553}|..\\Suduko.Model\\Suduko.Model.csproj|d:\\vs proj\\maoi\\onion\\sudukoorganizer\\suduko.model\\suduko.model.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAF0A274-E546-4D6F-ABAF-6746D91DEDFB}|..\\Suduko.Infrastructure\\Suduko.Infrastructure.csproj|d:\\vs proj\\maoi\\onion\\sudukoorganizer\\suduko.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE32BBD1-BFCB-459A-BDD1-61EED3869553}|..\\Suduko.Model\\Suduko.Model.csproj|d:\\vs proj\\maoi\\onion\\sudukoorganizer\\suduko.model\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9D28C7E-9424-4380-B10D-F1223847787E}|OnionSudoku.csproj|d:\\vs proj\\maoi\\onion\\sudukoorganizer\\onionsudoku\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F9D28C7E-9424-4380-B10D-F1223847787E}|OnionSudoku.csproj|d:\\vs proj\\maoi\\sudokuproj\\suduko\\onionsudoku\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9D28C7E-9424-4380-B10D-F1223847787E}|OnionSudoku.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAF0A274-E546-4D6F-ABAF-6746D91DEDFB}|..\\Suduko.Infrastructure\\Suduko.Infrastructure.csproj|d:\\vs proj\\maoi\\sudokuproj\\suduko\\suduko.infrastructure\\data\\sudukoapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FF36CB1-D4D0-492F-BCE7-827B2BCFAB99}|..\\Suduko.Application\\Suduko.Application.csproj|d:\\vs proj\\maoi\\sudokuproj\\suduko\\suduko.application\\services\\sudukoclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9D28C7E-9424-4380-B10D-F1223847787E}|OnionSudoku.csproj|d:\\vs proj\\maoi\\sudokuproj\\suduko\\onionsudoku\\onionsudoku.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F9D28C7E-9424-4380-B10D-F1223847787E}|OnionSudoku.csproj|solutionrelative:onionsudoku.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FF36CB1-D4D0-492F-BCE7-827B2BCFAB99}|..\\Suduko.Application\\Suduko.Application.csproj|d:\\vs proj\\maoi\\sudokuproj\\suduko\\suduko.application\\suduko.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE32BBD1-BFCB-459A-BDD1-61EED3869553}|..\\Suduko.Model\\Suduko.Model.csproj|d:\\vs proj\\maoi\\sudokuproj\\suduko\\suduko.model\\interface\\isudukoserviceapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE32BBD1-BFCB-459A-BDD1-61EED3869553}|..\\Suduko.Model\\Suduko.Model.csproj|d:\\vs proj\\maoi\\sudokuproj\\suduko\\suduko.model\\entities\\sudukolayout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAF0A274-E546-4D6F-ABAF-6746D91DEDFB}|..\\Suduko.Infrastructure\\Suduko.Infrastructure.csproj|d:\\vs proj\\maoi\\sudokuproj\\suduko\\suduko.infrastructure\\data\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,56 +36,103 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Suduko.Model",
-              "DocumentMoniker": "D:\\VS Proj\\Maoi\\Onion\\SudukoOrganizer\\Suduko.Model\\Suduko.Model.csproj",
-              "RelativeDocumentMoniker": "..\\Suduko.Model\\Suduko.Model.csproj",
-              "ToolTip": "D:\\VS Proj\\Maoi\\Onion\\SudukoOrganizer\\Suduko.Model\\Suduko.Model.csproj",
-              "RelativeToolTip": "..\\Suduko.Model\\Suduko.Model.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "OnionSudoku.csproj",
+              "DocumentMoniker": "D:\\VS Proj\\Maoi\\SudokuProj\\suduko\\OnionSudoku\\OnionSudoku.csproj",
+              "RelativeDocumentMoniker": "OnionSudoku.csproj",
+              "ToolTip": "D:\\VS Proj\\Maoi\\SudokuProj\\suduko\\OnionSudoku\\OnionSudoku.csproj",
+              "RelativeToolTip": "OnionSudoku.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-17T13:30:46.2Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-18T13:31:47.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Suduko.Application.csproj",
+              "DocumentMoniker": "D:\\VS Proj\\Maoi\\SudokuProj\\suduko\\Suduko.Application\\Suduko.Application.csproj",
+              "RelativeDocumentMoniker": "..\\Suduko.Application\\Suduko.Application.csproj",
+              "ToolTip": "D:\\VS Proj\\Maoi\\SudokuProj\\suduko\\Suduko.Application\\Suduko.Application.csproj",
+              "RelativeToolTip": "..\\Suduko.Application\\Suduko.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-18T13:31:50.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ISudukoServiceAPI.cs",
+              "DocumentMoniker": "D:\\VS Proj\\Maoi\\SudokuProj\\suduko\\Suduko.Model\\Interface\\ISudukoServiceAPI.cs",
+              "RelativeDocumentMoniker": "..\\Suduko.Model\\Interface\\ISudukoServiceAPI.cs",
+              "ToolTip": "D:\\VS Proj\\Maoi\\SudokuProj\\suduko\\Suduko.Model\\Interface\\ISudukoServiceAPI.cs",
+              "RelativeToolTip": "..\\Suduko.Model\\Interface\\ISudukoServiceAPI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T13:01:54.387Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\VS Proj\\Maoi\\Onion\\SudukoOrganizer\\Suduko.Infrastructure\\Class1.cs",
-              "RelativeDocumentMoniker": "..\\Suduko.Infrastructure\\Class1.cs",
-              "ToolTip": "D:\\VS Proj\\Maoi\\Onion\\SudukoOrganizer\\Suduko.Infrastructure\\Class1.cs",
-              "RelativeToolTip": "..\\Suduko.Infrastructure\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Title": "SudukoApiContext.cs",
+              "DocumentMoniker": "D:\\VS Proj\\Maoi\\SudokuProj\\suduko\\Suduko.Infrastructure\\Data\\SudukoApiContext.cs",
+              "RelativeDocumentMoniker": "..\\Suduko.Infrastructure\\Data\\SudukoApiContext.cs",
+              "ToolTip": "D:\\VS Proj\\Maoi\\SudokuProj\\suduko\\Suduko.Infrastructure\\Data\\SudukoApiContext.cs",
+              "RelativeToolTip": "..\\Suduko.Infrastructure\\Data\\SudukoApiContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T13:30:23.902Z",
+              "WhenOpened": "2026-03-18T12:55:14.629Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MyDBContext.cs",
+              "DocumentMoniker": "D:\\VS Proj\\Maoi\\SudokuProj\\suduko\\Suduko.Infrastructure\\Data\\MyDBContext.cs",
+              "RelativeDocumentMoniker": "..\\Suduko.Infrastructure\\Data\\MyDBContext.cs",
+              "ToolTip": "D:\\VS Proj\\Maoi\\SudokuProj\\suduko\\Suduko.Infrastructure\\Data\\MyDBContext.cs",
+              "RelativeToolTip": "..\\Suduko.Infrastructure\\Data\\MyDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T12:54:19.703Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\VS Proj\\Maoi\\Onion\\SudukoOrganizer\\Suduko.Model\\Class1.cs",
-              "RelativeDocumentMoniker": "..\\Suduko.Model\\Class1.cs",
-              "ToolTip": "D:\\VS Proj\\Maoi\\Onion\\SudukoOrganizer\\Suduko.Model\\Class1.cs",
-              "RelativeToolTip": "..\\Suduko.Model\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "SudukoClass.cs",
+              "DocumentMoniker": "D:\\VS Proj\\Maoi\\SudokuProj\\suduko\\Suduko.Application\\Services\\SudukoClass.cs",
+              "RelativeDocumentMoniker": "..\\Suduko.Application\\Services\\SudukoClass.cs",
+              "ToolTip": "D:\\VS Proj\\Maoi\\SudokuProj\\suduko\\Suduko.Application\\Services\\SudukoClass.cs",
+              "RelativeToolTip": "..\\Suduko.Application\\Services\\SudukoClass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T13:30:05.169Z",
+              "WhenOpened": "2026-03-18T12:45:35.381Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
+              "Title": "SudukoLayout.cs",
+              "DocumentMoniker": "D:\\VS Proj\\Maoi\\SudokuProj\\suduko\\Suduko.Model\\Entities\\SudukoLayout.cs",
+              "RelativeDocumentMoniker": "..\\Suduko.Model\\Entities\\SudukoLayout.cs",
+              "ToolTip": "D:\\VS Proj\\Maoi\\SudokuProj\\suduko\\Suduko.Model\\Entities\\SudukoLayout.cs",
+              "RelativeToolTip": "..\\Suduko.Model\\Entities\\SudukoLayout.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T16:06:20.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\VS Proj\\Maoi\\Onion\\SudukoOrganizer\\OnionSudoku\\Program.cs",
+              "DocumentMoniker": "D:\\VS Proj\\Maoi\\SudokuProj\\suduko\\OnionSudoku\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\VS Proj\\Maoi\\Onion\\SudukoOrganizer\\OnionSudoku\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\VS Proj\\Maoi\\SudokuProj\\suduko\\OnionSudoku\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBIAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-17T13:24:38.361Z",
               "EditorCaption": ""

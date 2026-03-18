@@ -16,8 +16,6 @@ namespace Suduko.Infrastructure.Data
             optionsBuilder.UseSqlServer(build_loc);
         }
 
-
-        public DbSet<SudukoBox> boxes { get; set; } = default;
         public DbSet<SudukoLayout> SudukoLayout { get; set; } = default;
     }
 }

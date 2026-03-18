@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36603.0 d17.14
+VisualStudioVersion = 17.14.36603.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionSudoku", "OnionSudoku.csproj", "{F9D28C7E-9424-4380-B10D-F1223847787E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Suduko.Model", "..\Suduko.Model\Suduko.Model.csproj", "{CE32BBD1-BFCB-459A-BDD1-61EED3869553}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Suduko.Infrastructure", "..\Suduko.Infrastructure\Suduko.Infrastructure.csproj", "{FAF0A274-E546-4D6F-ABAF-6746D91DEDFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Suduko.Application", "..\Suduko.Application\Suduko.Application.csproj", "{5FF36CB1-D4D0-492F-BCE7-827B2BCFAB99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{FAF0A274-E546-4D6F-ABAF-6746D91DEDFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAF0A274-E546-4D6F-ABAF-6746D91DEDFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAF0A274-E546-4D6F-ABAF-6746D91DEDFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FF36CB1-D4D0-492F-BCE7-827B2BCFAB99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FF36CB1-D4D0-492F-BCE7-827B2BCFAB99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FF36CB1-D4D0-492F-BCE7-827B2BCFAB99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FF36CB1-D4D0-492F-BCE7-827B2BCFAB99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
