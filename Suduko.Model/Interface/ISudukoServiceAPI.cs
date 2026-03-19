@@ -13,6 +13,8 @@ namespace Suduko.Model.Interface
         //Task<SudukoLayout> GetAllAsync();
         //Task DeleteAsync();
 
+        Task<List<string>> GetAsync();
+
         Task UpdateAsync(SudukoLayout suduko);
     }
 }

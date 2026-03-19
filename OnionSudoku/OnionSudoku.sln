@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Suduko.Infrastructure", "..
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Suduko.Application", "..\Suduko.Application\Suduko.Application.csproj", "{5FF36CB1-D4D0-492F-BCE7-827B2BCFAB99}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Suduko.Front", "..\Suduko.Front\Suduko.Front.csproj", "{8E49C0E2-B224-4046-8BA4-00EC7FF60FC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{5FF36CB1-D4D0-492F-BCE7-827B2BCFAB99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FF36CB1-D4D0-492F-BCE7-827B2BCFAB99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FF36CB1-D4D0-492F-BCE7-827B2BCFAB99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E49C0E2-B224-4046-8BA4-00EC7FF60FC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E49C0E2-B224-4046-8BA4-00EC7FF60FC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E49C0E2-B224-4046-8BA4-00EC7FF60FC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E49C0E2-B224-4046-8BA4-00EC7FF60FC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

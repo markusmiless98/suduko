@@ -16,7 +16,9 @@ namespace Suduko.Infrastructure.Data
 {
     public class SudukoApiContext : ISudukoServiceAPI
     {
-        static string api_key = "";
+        static string api_key = "GuocSBDbYfvYzSwBxukOWGwJL4vtFAQQupoqLVSK";
+
+        private static SudukoLayout layout { get; set; }
 
         public async Task<List<string>> CreateAsync()
         {
@@ -24,7 +26,7 @@ namespace Suduko.Infrastructure.Data
 
             client.BaseAddress = new Uri("https://api.api-ninjas.com/");
             client.DefaultRequestHeaders.Add("X-Api-Key", api_key);
-            SudukoLayout suduko = null;
+            layout = null;
 
             HttpResponseMessage response = await client.GetAsync("v1/sudokugenerate?difficulty=medium&width=3&height=3");
             if (response.IsSuccessStatusCode)
@@ -33,11 +35,11 @@ namespace Suduko.Infrastructure.Data
                 responseString = responseString.Trim();
                 responseString = responseString.Replace("null", "-1"); // Won't accept 'null' as value so replacing with -1
 
-                suduko = JsonNet.Deserialize<SudukoLayout>(responseString);
+                layout = JsonNet.Deserialize<SudukoLayout>(responseString);
             }
             Thread.Sleep(3000);
 
-            if (suduko != null)
+            if (layout != null)
             {
                 List<string> result = new List<string>();
                 Func<int[], List<string>> res_func = (x) =>
@@ -50,7 +52,7 @@ namespace Suduko.Infrastructure.Data
                     return res;
                 };
 
-                foreach (var row in suduko.Puzzle)
+                foreach (var row in layout.Puzzle)
                 {
                     result.AddRange(res_func(row));
                 }
@@ -59,6 +61,34 @@ namespace Suduko.Infrastructure.Data
             }
 
             return null;
+        }
+
+        public async Task<List<string>> GetAsync()
+        {
+            if (layout == null)
+            {
+                return await CreateAsync();
+            }
+            else
+            {
+                List<string> result = new List<string>();
+                Func<int[], List<string>> res_func = (x) =>
+                {
+                    List<string> res = new List<string>();
+                    foreach (var item in x)
+                    {
+                        res.Add(item.ToString());
+                    }
+                    return res;
+                };
+
+                foreach (var row in layout.Puzzle)
+                {
+                    result.AddRange(res_func(row));
+                }
+
+                return result;
+            }
         }
 
         public Task UpdateAsync(SudukoLayout suduko)
