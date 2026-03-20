@@ -21,7 +21,7 @@ namespace SudokuProj.SudAPI
             client.DefaultRequestHeaders.Add("X-Api-Key", "GuocSBDbYfvYzSwBxukOWGwJL4vtFAQQupoqLVSK");
             SudukoLayout user = null;
 
-            HttpResponseMessage response = await client.GetAsync("v1/sudokugenerate?difficulty=medium&width=3&height=3");
+            HttpResponseMessage response = await client.GetAsync("v1/sudokugenerate?difficulty=easy&width=3&height=3");
             if (response.IsSuccessStatusCode)
             {
                 string responseString = await response.Content.ReadAsStringAsync();
@@ -30,7 +30,7 @@ namespace SudokuProj.SudAPI
 
                 user = JsonNet.Deserialize<SudukoLayout>(responseString);
             }
-            Thread.Sleep(3000);
+            Thread.Sleep(2500);
             return user;
         }
     }

@@ -53,6 +53,35 @@ namespace SudokuProj.ViewModels
             }
         }
 
+        public bool IsSudukoSolved()
+        {
+            int i = 0;
+            int x = 0;
+            int y = 0;
+            while (i < 81)
+            {
+                if (suduko.Puzzle.ElementAt(x)[y] == -1)
+                {
+                    return false;
+                }
+                else if (suduko.Solution.ElementAt(x)[y] != suduko.Puzzle.ElementAt(x)[y])
+                {
+                    return false;
+                }
+                if (x >= 8)
+                {
+                    x = 0;
+                    y++;
+                }
+                else
+                {
+                    x++;
+                }
+                i++;
+            }
+            return true;
+        }
+
         // Temporary public while I figure out other stuff
         public async Task<List<string>> LoadSudokuFromSelection()
         {
