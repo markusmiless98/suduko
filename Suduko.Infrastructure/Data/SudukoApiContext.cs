@@ -37,7 +37,7 @@ namespace Suduko.Infrastructure.Data
 
                 layout = JsonNet.Deserialize<SudukoLayout>(responseString);
             }
-            Thread.Sleep(3000);
+            Thread.Sleep(1500);
 
             if (layout != null)
             {
